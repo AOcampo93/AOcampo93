@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--My styles-->
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <title>SunnyClimate | Preston</title>
+</head>
+<body>
+    <header>
+        <div class="container-logo">
+        <img src="images/SunnyClimate-White.png" alt="SunnyClimate">
+        </div>
+        <nav>
+            <ul>
+                <li id="menu-icon"><a href="#" onclick="menu()">&#9776; Menu</a></li>
+
+                <div id="menu">
+                    <div id="menutext" class="menuStyle">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="preston-4.html">Preston</a></li>
+                        <li><a href="sodasprings.html">Soda Springs</a></li>
+                        <li><a href="fishhaven.html">Fish Haven</a></li>
+                        <li><a href="stormcenter.html">Storm Center</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <!--Container Title-->
+            <div class="ContainerTitles">
+                <h1>Preston Idaho</h1>
+            </div>
+            <div class="container-principal-img">
+                <!--Container Weather Summary-->
+                <div class="container-weather">
+                    <h2>Weather Summary</h2>
+                    <hr>
+                    <p class="text-summary">Currently: <span class="text-summary-color" id="currently">Sunny</span></p>
+                    <p class="text-summary">Hight: <span class="text-summary-color" id="hight">76 ºF</span></p>
+                    <p class="text-summary">Wind Chill: <span class="text-summary-color" id="wind-chill">ºF</span></p>
+                    <p class="text-summary">Humidity: <span class="text-summary-color" id="humidity">69%</span></p>
+                    <p class="text-summary">Wind Speed: <span class="text-summary-color" id="wind-speed">5 mph</span></p>
+                </div>
+                <!--Principal Image-->
+                <picture>
+                    <source media="(min-width: 769px)" srcset="images/Preston(Desktop).png">
+                    <source media="(min-width: 426px)" srcset="images/Preston(Tablet).png">
+                    <img src="images/Preston(Mobile).png" alt="Preston">
+                </picture>
+            </div>
+            <!--forecast-->
+            <div class="Container-forecast" id="forecast">
+                <div class="ContainerTitles">
+                    <p class="Titles-section">5 Day Forecast</p>
+                </div>
+                <table>
+                    <tr class="style-header-table">
+                        <td>Mon</td>
+                        <td>Tue</td>
+                        <td>Wed</td>
+                        <td>Thu</td>
+                        <td>Fri</td>
+                    </tr>
+                    <tr class="style-body-table">
+                        <td>
+                            <img class="img-icon-forecast" src="images/Sunny.png" alt="...">
+                            <p class="Text-forecast">75ºF</p>
+                        </td>
+                        <td>
+                            <img class="img-icon-forecast" src="images/Cloud.png" alt="...">
+                            <p class="Text-forecast">65ºF</p>
+                        </td>
+                        <td>
+                            <img class="img-icon-forecast" src="images/Rain.png" alt="...">
+                            <p class="Text-forecast">56ºF</p>
+                        </td>
+                        <td>
+                            <img class="img-icon-forecast" src="images/Rain.png" alt="...">
+                            <p class="Text-forecast">89ºF</p>
+                        </td>
+                        <td>
+                            <img class="img-icon-forecast" src="images/Snow.png" alt="...">
+                            <p class="Text-forecast">72ºF</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <p class="footerText">SunnyClimate | Lesson-4 | Arturo Ocampo</p>
+            <p id="date" class="footerText"></p>
+        </div>
+    </footer>
+    <script>
+        var d = new Date();
+        document.getElementById("date").innerHTML = d;
+    </script>
+    <script src="js/MyJS.js"></script>
+</body>
+</html>
