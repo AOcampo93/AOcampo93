@@ -50,11 +50,23 @@
     }
 
     /*main*/
-
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
     .BoxContainer{
+        width: 95%;
+    }
+    article{
         width: 90%;
     }
-
+    .img-container-article{
+        width: 50%;
+    }
+    .seccion-info{
+        margin-bottom: 0%;
+    }
 
 
 }

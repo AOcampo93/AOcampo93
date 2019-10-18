@@ -57,5 +57,22 @@
     #forecast{
         display: none;
     }
+    .img-container-article{
+        width: 100%;
+        margin: 0%;
+        margin-bottom: 50px;
+    }
+    .TextArticle{
+        text-align: justify;
+    }
+    #map{
+        display: none;
+    }
+    .col-50{
+        width: 100%;
+    }
+    .info{
+        text-align: center;
+    }
 
   }
