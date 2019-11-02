@@ -67,6 +67,40 @@
     .seccion-info{
         margin-bottom: 0%;
     }
+    /* Gallery */
 
-
+    .container-grid{
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-gap: 20px;
+    }
+    .container-middle{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .column-3-row-1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .column-3-row-2{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .column-3-row-3{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .description{
+        display: none;
+    }
 }
