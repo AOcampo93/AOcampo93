@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--My styles-->
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <title>SunnyClimate | Gallery</title>
+</head>
+<body>
+    <div class="alert" id="alertFridays">
+        <h3 class="alertText">Sunday = Preston Pancakes in the park!<br>9:00 A.M Friday at the city park.</h3>
+    </div>
+    <header>
+        <div class="container-logo">
+        <img src="images/SunnyClimate-White.png" alt="SunnyClimate">
+        </div>
+        <nav>
+            <ul>
+                <li id="menu-icon"><a href="#" onclick="menu()">&#9776; Menu</a></li>
+
+                <div id="menu">
+                    <div id="menutext" class="menuStyle">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="preston-4.html">Preston</a></li>
+                        <li><a href="sodasprings.html">Soda Springs</a></li>
+                        <li><a href="fishhaven.html">Fish Haven</a></li>
+                        <li><a href="stormcenter.html">Storm Center</a></li>
+                        <li class="ActualPage"><a href="gallery.html">Gallery</a></li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container-middle">
+            <div class="container-grid">
+
+                <!--1º Column-->
+                <div class="item column-1-row-1">
+                    <img class="img-100" src="images/gallery-1.png" alt="...">
+                    <div class="description">
+                        <p>Description of the image</p>
+                    </div>
+                </div>
+                <div class="item column-1-row-2">
+                    <img class="img-100" src="images/gallery-1.png" alt="...">
+                </div>
+                <div class="item column-1-row-3">
+                    <img class="img-100" src="images/gallery-1.png" alt="...">
+                </div>
+
+                <!--2º column-->
+                <div class="item column-2-row-1">
+                    <img class="img-100" src="images/gallery-1.png" alt="...">
+                </div>
+                <div class="item column-2-row-2">
+                    <img class="img-100" src="images/gallery-1.png" alt="...">
+                </div>
+                <div class="item column-2-row-3">
+                    <img class="img-100" src="images/gallery-1.png" alt="...">
+                </div>
+
+                <!--3º column-->
+                <div class="item column-3-row-1">
+                    <img class="img-100" src="images/gallery-1.png" alt="...">
+                </div>
+                <div class="item column-3-row-2">
+                    <img class="img-100" src="images/gallery-1.png" alt="...">
+                </div>
+                <div class="item column-3-row-3">
+                    <img class="img-100" src="images/gallery-1.png" alt="...">
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <p class="footerText">SunnyClimate | Lesson-6 | Arturo Ocampo © 2019</p>
+            <p id="date" class="footerText"></p>
+        </div>
+    </footer>
+    <script>
+        var d = new Date();
+        document.getElementById("date").innerHTML = d;
+    </script>
+    <script src="js/MyJS.js"></script>
+    <script src="js/alertfridays.js"></script>
+</body>
+</html>
