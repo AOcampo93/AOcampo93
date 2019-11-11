@@ -34,7 +34,14 @@
         </nav>
     </header>
     <main>
-        Thank You!
+        <div id="container-thanks">
+            <img id="logo-thankspage" src="images/SunnyClimate.png" alt="Logo">
+            <h4>Thanks for your report</h4>
+            <p>- Your form has been sent correctly -</p>
+            <br>
+            <p class="little-text">This window will close automatically in: <span id="tiempoact">
+                </span> segundos</p>
+            </div>
     </main>
     <footer>
         <div class="container-footer">
@@ -46,5 +53,22 @@
         var d = new Date();
         document.getElementById("date").innerHTML = d;
     </script>
+    <script>
+        var tiempo = 5;
+         function cuentaRegresiva(){
+         if (tiempo > 0){
+            tiempo--
+         }
+         else{
+            window.history.back();
+          
+         }
+        document.getElementById("tiempoact").innerHTML=tiempo
+         setTimeout("cuentaRegresiva()",1000)
+         }
+        window.onload=function(){
+        cuentaRegresiva();
+          };
+        </script>
 </body>
 </html>
