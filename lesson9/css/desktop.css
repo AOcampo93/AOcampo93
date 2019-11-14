@@ -528,3 +528,20 @@ footer{
   input[type=range]:focus::-ms-fill-upper {
     background: #2497E3;
   }
+
+  /* Index */
+
+.container-column{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.home-box{
+    width: 300px;
+    border: 1px solid grey;
+    margin: 4%;
+}
+.content-text{
+    width: 100%;
+    padding: 3%;
+}
