@@ -37,9 +37,9 @@ fetch(requestURL)
   var SodaRain = myobj.towns[5].averageRainfall;
 
   //IMG
-  var FishPhoto = myobj.towns[1].photo;
+  /*var FishPhoto = myobj.towns[1].photo;
   var PrestonPhoto = myobj.towns[4].photo;
-  var SodaPhoto = myobj.towns[5].photo;
+  var SodaPhoto = myobj.towns[5].photo;*/
 
 
 // PRINTING THE RESULTS IN THE HTML
@@ -69,7 +69,8 @@ fetch(requestURL)
   document.getElementById('PrestonRain').innerHTML = PrestonRain;
   document.getElementById('SodaRain').innerHTML = SodaRain;
 
-  document.getElementById("FishPhoto").src = FishPhoto;
+  //PHOTO
+  /*document.getElementById("FishPhoto").src = FishPhoto;
   document.getElementById("PrestonPhoto").src = PrestonPhoto;
-  document.getElementById("SodaPhoto").src = SodaPhoto;
+  document.getElementById("SodaPhoto").src = SodaPhoto;*/
 });

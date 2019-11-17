@@ -531,6 +531,9 @@ footer{
 
   /* Index */
 
+.slide{
+    margin-top: 5%;
+}
 .container-column{
     width: 100%;
     display: flex;
@@ -540,8 +543,45 @@ footer{
     width: 300px;
     border: 1px solid grey;
     margin: 4%;
+    background: white;
 }
 .content-text{
     width: 100%;
     padding: 3%;
+    height:180px;
+}
+
+.title-box{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: -4%;
+    color: #e46d0a;
+}
+.theme-box{
+    font-style: italic;
+    font-size: 10pt;
+    text-align: center;
+    margin-bottom: 10%;
+    color: #004060;
+}
+.text-box{
+    font-size: 12pt;
+    padding-left: 5%;
+    margin: 0%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.content-text span{
+    font-weight: 600;
+    color: #004060;
+}
+.content-img-box{
+    height: 150px;
+}
+.content-img-box img{
+    height: 100%;
+    margin-top: 10%;
+}
+.m-top{
+    margin-top: 20px;
 }
