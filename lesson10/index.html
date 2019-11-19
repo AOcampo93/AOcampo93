@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--My styles-->
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <title>SunnyClimate | Home</title>
+</head>
+<body>
+    <div class="alert" id="alertFridays">
+        <h3 class="alertText">Sunday = Preston Pancakes in the park!<br>9:00 A.M Friday at the city park.</h3>
+    </div>
+    <header>
+        <div class="container-logo">
+        <img src="images/SunnyClimate-White.png" alt="SunnyClimate">
+        </div>
+        <nav>
+            <ul>
+                <li id="menu-icon"><a href="#" onclick="menu()">&#9776; Menu</a></li>
+
+                <div id="menu">
+                    <div id="menutext" class="menuStyle">
+                        <li class="ActualPage"><a href="index.html">Home</a></li>
+                        <li><a href="preston.html">Preston</a></li>
+                        <li><a href="sodasprings.html">Soda Springs</a></li>
+                        <li><a href="fishhaven.html">Fish Haven</a></li>
+                        <li><a href="stormcenter.html">Storm Center</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <!--Principal Image-->
+            <div class="slide">
+                <picture>
+                    <source media="(min-width: 769px)" srcset="images/Index(Desktop).png">
+                    <source media="(min-width: 426px)" srcset="images/Index(Tablet).png">
+                    <img src="images/Index(Mobile).png" alt="Preston">
+                </picture>
+            </div>
+
+            <!--Box-->
+            <div class="container-column">
+                <div class="home-box">
+                    <div class="content-text">
+                        <h2 class="title-box" id="box1"></h2>
+                        <p class="theme-box" id="motto1"></p>
+                        <p class="text-box">Year founded: <span id="FishYear"></span></p>
+                        <p class="text-box">Population: <span id="FishPopulation"></span></p>
+                        <p class="text-box">Annual Rain Fall: <span id="FishRain"></span></p>
+                    </div>
+                    <div class="content-img-box">
+                        <img class="m-top" src="images/gallery-1.png" alt="...">
+                    </div>
+                </div>
+
+                <div class="home-box">
+                        <div class="content-text">
+                            <h2 class="title-box" id="box2"></h2>
+                            <p class="theme-box" id="motto2"></p>
+                            <p class="text-box">Year founded: <span id="PrestonYear"></span></p>
+                            <p class="text-box">Population: <span id="PrestonPopulation"></span></p>
+                            <p class="text-box">Annual Rain Fall: <span id="PrestonRain"></span></p>
+                        </div>
+                        <div class="content-img-box">
+                            <img class="m-top" src="images/gallery-2.png" alt="...">
+                        </div>
+                    </div>
+
+                    <div class="home-box">
+                            <div class="content-text">
+                                <h2 class="title-box" id="box3"></h2>
+                                <p class="theme-box" id="motto3"></p>
+                                <p class="text-box">Year founded: <span id="SodaYear"></span></p>
+                                <p class="text-box">Population: <span id="SodaPopulation"></span></p>
+                                <p class="text-box">Annual Rain Fall: <span id="SodaRain"></span></p>
+                            </div>
+                            <div class="content-img-box">
+                                <img src="images/gallery-3.png" alt="...">
+                            </div>
+                        </div>
+                
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <p class="footerText">SunnyClimate | Lesson-6 | Arturo Ocampo © 2019</p>
+            <p id="date" class="footerText"></p>
+        </div>
+    </footer>
+    <script>
+        var d = new Date();
+        document.getElementById("date").innerHTML = d;
+    </script>
+    <script src="js/MyJS.js"></script>
+    <script src="js/alertfridays.js"></script>
+    <script src="js/JSONindex.js"></script>
+</body>
+</html>
