@@ -125,7 +125,7 @@ hr{
     justify-content: center;
 }
 .Container-forecast table{
-    max-width: 550px;
+    max-width: 950px;
     text-align: center;
     border: 1px solid #4591C1;
 }
@@ -145,9 +145,12 @@ hr{
     font-weight: 600;
     font-size: 14pt;
     color: #0069AA;
+    padding: 3%;
 }
 .img-icon-forecast{
-    width: 50%;
+    width: 100%;
+    padding-right: 4%;
+    padding-left: 4%;
 }
 .style-body-table{
     background: #D0E3EF;

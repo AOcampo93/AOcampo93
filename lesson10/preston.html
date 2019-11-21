@@ -67,35 +67,41 @@
                 </div>
                 <table>
                     <tr class="style-header-table">
-                        <td>Mon</td>
-                        <td>Tue</td>
-                        <td>Wed</td>
-                        <td>Thu</td>
-                        <td>Fri</td>
+                        <th id="day1-day-name">Mon</th>
+                        <th id="day2-day-name">Tue</th>
+                        <th id="day3-day-name">Wed</th>
+                        <th id="day4-day-name">Thu</th>
+                        <th id="day5-day-name">Fri</th>
                     </tr>
                     <tr class="style-body-table">
-                        <td>
-                            <img class="img-icon-forecast" src="images/Sunny.png" alt="...">
-                            <p class="Text-forecast" id="Mon"></p>
+                        <td class="Text-forecast">
+                            <img class="img-icon-forecast" id="day1-weather-icon" src="images/Rain.png" alt="...">
+                            <br>
+                            <span id="day1-temperature"></span>° F
                         </td>
-                        <td>
-                            <img class="img-icon-forecast" src="images/Cloud.png" alt="...">
-                            <p class="Text-forecast" id="Tue"></p>
+                        <td class="Text-forecast">
+                            <img class="img-icon-forecast" id="day2-weather-icon" src="images/Sunny.png" alt="...">
+                            <br>
+                            <span id="day2-temperature"></span>° F
                         </td>
-                        <td>
-                            <img class="img-icon-forecast" src="images/Rain.png" alt="...">
-                            <p class="Text-forecast" id="Wed"></p>
+                        <td class="Text-forecast">
+                            <img class="img-icon-forecast" id="day3-weather-icon" src="images/Rain.png" alt="...">
+                            <br>
+                            <span id="day3-temperature"></span>° F
                         </td>
-                        <td>
-                            <img class="img-icon-forecast" src="images/Rain.png" alt="...">
-                            <p class="Text-forecast" id="Thu"></p>
+                        <td class="Text-forecast">
+                            <img class="img-icon-forecast" id="day4-weather-icon" src="images/Sunny.png" alt="...">
+                            <br>
+                            <span id="day4-temperature"></span>° F
                         </td>
-                        <td>
-                            <img class="img-icon-forecast" src="images/Snow.png" alt="...">
-                            <p class="Text-forecast" id="Fri"></p>
+                        <td class="Text-forecast">
+                            <img class="img-icon-forecast" id="day5-weather-icon" src="images/Snow.png" alt="...">
+                            <br>
+                            <span id="day5-temperature"></span>° F
                         </td>
                     </tr>
                 </table>
+
             </div>
                 <!-- Article section -->
                 <article>
@@ -167,7 +173,7 @@
     <script src="js/MyJS.js"></script>
     <script src="js/alertfridays.js"></script>
     <script src="js/current.js"></script>
-    <script src="js/forcast.js"></script>
+    <script src="js/forecast.js"></script>
 
 </body>
 </html>

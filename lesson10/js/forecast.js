@@ -1,32 +1,23 @@
-const forecastWeatherRequestURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=c1ed581fad3ad1154a8a70dafc61d847&units=imperial';
+const forecastWeatherRequestURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=ce1b41bea110dc29a315acc06cc91b63&units=imperial';
 fetch(forecastWeatherRequestURL)
-
   .then(function (response)
   {
-
     return response.json();
-    
   })
-  
   .then(function (jsonObject)
   {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    console.table(jsonObject); 
+    const forecast = jsonObject['list']
+    var Count = 1;
 
-    const forecastList = jsonObject['list']
-
-    var dayCounter = 1;
-
-    for (i = 0; i < forecastList.length; i++)
+    for (i = 0; i < forecast.length; i++)
     {        
 
-        if (forecastList[i]['dt_txt'].includes('18:00:00'))
+        if (forecast[i]['dt_txt'].includes('18:00:00'))
         {
-            var unixTime = parseFloat(forecastList[i]['dt']);
-
-            var forecastDate = new Date(unixTime * 1000);
-
+            var time = parseFloat(forecast[i]['dt']);
+            var forecastDate = new Date(time * 1000);
             var forecastDayNumber = forecastDate.getDay();
-
             var dayOfWeek = "";
 
             switch(forecastDayNumber)
@@ -56,13 +47,10 @@ fetch(forecastWeatherRequestURL)
                     break;
             }
             
-            document.getElementById("day" + dayCounter + "-day-name").innerHTML = dayOfWeek;
-
-            document.getElementById("day" + dayCounter + "-weather-icon").src = 'https://openweathermap.org/img/w/' + forecastList[i]['weather'][0].icon + '.png';
-
-            document.getElementById("day" + dayCounter + "-temperature").innerHTML = forecastList[i]['main']['temp'];
-
-            dayCounter++;
+            document.getElementById("day" + Count + "-day-name").innerHTML = dayOfWeek;
+            document.getElementById("day" + Count + "-weather-icon").src = 'https://openweathermap.org/img/w/' + forecast[i]['weather'][0].icon + '.png';
+            document.getElementById("day" + Count + "-temperature").innerHTML = forecast[i]['main']['temp'];
+            Count++;
         }
     }
 
