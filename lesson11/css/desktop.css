@@ -162,6 +162,7 @@ article{
     padding: 0%;
 }
 .container-article{
+    width: 100%;
     padding: 3%;
 }
 .img-container-article{
@@ -588,7 +589,37 @@ footer{
 .m-top{
     margin-top: 20px;
 }
-
 .home-box:hover{
-    margin-top: 10px;
+    -webkit-box-shadow: 2px 11px 18px -2px rgba(0,0,0,0.72);
+    -moz-box-shadow: 2px 11px 18px -2px rgba(0,0,0,0.72);
+    box-shadow: 2px 11px 18px -2px rgba(0,0,0,0.72);
+}
+
+.adjust-width{
+    width: 100%;
+}
+.adjust-width .container-article{
+    width: 95%;
+}
+.adjust-width .TextArticle{
+    width: 95%;
+}
+.seccion-info{
+    width: 100%;
+    margin-bottom: 0%;
+}
+.container{
+    width: 100%;
+}
+
+.container-article{
+    width: 95%;
+}
+
+#Events-Preston{
+    display: none;
+}
+
+#alertCome a{
+    color: inherit;
 }
