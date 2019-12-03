@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
-
-body{
-    font-family: 'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
-header{
+header {
     width: 100%;
     padding: 3% 0% 3% 0%;
-    background: #004060;
+    background: #E8888E;
     text-align: center;
     color: white;
 }
-nav ul{
+
+nav ul {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -19,138 +19,174 @@ nav ul{
     padding: 0%;
     margin: 0%;
 }
-li{
+
+li {
     width: auto;
     list-style: none;
     padding: 0% 1% 0% 1%;
     border-left: 1px solid white;
 }
-li:first-child{
+
+li:first-child {
     border-left: none;
 }
-li a{
+
+li a {
     color: white;
     text-decoration: none;
 }
 
-.container{
+.container {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.GeneralBox{
+
+.GeneralBox {
     max-width: 900px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.img-logo{
+
+.img-logo {
     width: 50%;
 }
-.img-article{
+
+.img-article {
     width: 100%;
 }
-.img-container{
+
+.img-container {
     width: 100%;
     text-align: center;
 }
-h3{font-size: 20pt;}
-h4{
+
+h3 {
+    font-size: 20pt;
+}
+
+h4 {
     font-size: 20pt;
     margin-bottom: 0%;
 }
-.text{
+
+.text {
     font-size: 16pt;
 }
-footer{
-    background: #004060;
+
+footer {
+    background: #E8888E;
     padding: 1% 0% 1% 0%;
     text-align: center;
     color: white;
 }
-h6{
+
+h6 {
     font-size: 16pt;
 }
-table{
+
+table {
     width: 100%;
 }
-.img-table{
+
+.img-table {
     width: 30%;
     vertical-align: top;
 }
-.img-table img{
+
+.img-table img {
     margin-right: 30px;
 }
-.text-table{
+
+.text-table {
     width: 70%;
 }
-.title{
+
+.title {
     font-weight: 700;
     font-size: 17pt;
 }
-.marginTop{
+
+.marginTop {
     margin-top: 4%;
 }
-.container-colors{
+
+.container-colors {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.boxColor{
+
+.boxColor {
     width: 100px;
     height: 100px;
     border: 1px solid #323232;
     margin: 15px;
 }
-#one{
-    background: #ff6300;
+
+#one {
+    background: #f6c6b9;
 }
-#two{
-    background: #0069aa;
+
+#two {
+    background: #ffded3;
 }
-#three{
-    background: #e0bb04;
+
+#three {
+    background: #e8888e;
 }
-#four{
-    background: #e57369;
+
+#four {
+    background: #bc215f;
 }
-#five{
-    background: #004060;
+
+#five {
+    background: #8c014b;
 }
-#six{
+
+#six {
     background: #323232;
 }
-.container-type{
+
+.container-type {
     display: flex;
     width: 100%;
 }
-.col-30{
+
+.col-30 {
     width: 50%;
 }
-.col-70{
+
+.col-70 {
     width: 50%;
 }
-.titlefont{
+
+.titlefont {
     font-weight: 700;
     font-size: 22pt;
 }
-.textfont{
+
+.textfont {
     font-weight: 400;
     font-size: 16pt;
 }
-.links{
+
+.links {
     font-weight: 400;
     font-style: italic;
-
 }
-.img-total{
+
+.img-total {
     width: 100%;
 }
-#menu-icon{
+
+#menu-icon {
     display: none;
 }
-#menu{
+
+#menu {
     display: block;
     width: 100%;
     display: flex;
@@ -159,12 +195,13 @@ table{
     padding: 0%;
     margin: 0%;
 }
+
 @media only screen and (max-width: 899px) {
-    .GeneralBox{
+    .GeneralBox {
         width: 100%;
         padding: 4%;
     }
-    #menu{
+    #menu {
         display: block;
         width: 100%;
         display: flex;
@@ -173,9 +210,10 @@ table{
         padding: 0%;
         margin: 0%;
     }
-  }
-  @media only screen and (max-width: 626px) {
-    nav ul{
+}
+
+@media only screen and (max-width: 626px) {
+    nav ul {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -184,19 +222,19 @@ table{
         padding: 0%;
         margin: 0%;
     }
-    li{
+    li {
         width: 100%;
         list-style: none;
         padding: 2% 1% 2% 1%;
         border-left: none;
     }
-    .img-table{
-        display: none;
-
-    }
-    #menu-icon{display:block;}
-    #menu{
+    .img-table {
         display: none;
     }
-
-  }
+    #menu-icon {
+        display: block;
+    }
+    #menu {
+        display: none;
+    }
+}
