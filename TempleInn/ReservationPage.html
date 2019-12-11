@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+            <title>Temple Inn & Suites - Reservation</title>
+            <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+            <meta name="description" content="The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world.">
+            <link rel="stylesheet" href="css/normalize.css">
+            <link rel="stylesheet" href="css/small.css">
+            <link rel="stylesheet" href="css/medium.css">
+            <link rel="stylesheet" href="css/large.css">
+            <link rel="stylesheet" href="css/extra-large.css">
+            <script src="js/MenuResponsive.js"></script>
+    </head>
+    <body>
+
+        <!--Header & Menu-->
+
+        <header>
+            <div id="Principal-Logo">
+                <img src="images/principal-logo.png" alt="Temple Inn & Suites Logo">
+            </div>
+            <nav>
+                <ul class="navigation">
+                    <li id="menu-icon"><a href="#" title="Menu" onclick="MenuResponsive()">&#9776; Menu</a></li>
+                    <div id="hidden">
+                    <hr class="horizontal">
+                    <li><a href="Home.html">Home</a></li>
+                    <div class="vertical"></div>
+                    <hr class="horizontal">
+                    <li><a href="TemplePage.html">Temple</a></li>
+                    <div class="vertical"></div>
+                    <hr class="horizontal">
+                    <li><a href="ServicesPage.html">Services</a></li>
+                    <div class="vertical"></div>
+                    <hr class="horizontal">
+                    <li><a href="ContactPage.html">Contact</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!--Reservation Page-->
+            <section id="ContainerReservation">
+                <div id="ContainerForm">
+                    <div class="Col-Image">
+                            <p class="Title-ReservationPage">Make your<br>Reservation</p>
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="images/ImgReservationPage(Desktop).png">
+                            <source media="(min-width: 426px)" srcset="images/ImgReservationPage(Tablet).png">
+                            <img src="images/ImgReservationPage(Tablet).png" alt="SlideShow(3)">
+                        </picture>
+                    </div>
+                    <div class="Col-Form">
+                        <form id="MakeReservation" action="">
+
+                            <!--Step 1-->
+                            <div id="Step1Container">
+                                <p class="TitleForm">Your information</p>
+                                <p class="TextForm">Please fill the boxes with your personal information.</p>
+                                <div class="feedBack" id="checkStep1"></div>
+                                <div class="inputContainer">
+                                    <input class="inputStyles-col" id="Name" type="text" placeholder="Name*">
+                                    <input class="inputStyles" id="LastName" type="text" placeholder="Last Name*">
+                                </div>
+                                <div class="inputContainer">
+                                    <input class="inputStyles-col" id="Phone" type="tel" placeholder="Phone*">
+                                    <input class="inputStyles" id="Country" type="text" placeholder="Country / State*">
+                                </div>
+                                <input class="inputStyles" id="Email" type="email" placeholder="Email*">
+                                <div class="ButtonContainer">
+                                    <p class="SmallTitle">*Obligatory Box</p>
+                                    <button type="button" onclick="NextStep1()">Next</button>
+                                </div>
+                            </div>
+
+                            <!--Step 2-->
+                            <div id="Step2Container">
+                                <p class="TitleForm">Your reservation</p>
+                                <p class="TextForm">Please fill the boxes with the service that you want.</p>
+                                <div class="feedBack" id="checkStep2"></div>
+                                <select id="Hotel" name="hotel" >
+                                    <option value="Invalid">Select the hotel*</option>
+                                    <option value="Madrid">Madrid Spain</option>
+                                    <option value="Mexico">Mexico City</option>
+                                    <option value="Oakland">Oakland</option>
+                                    <option value="Sacramento">Sacramento</option>
+                                </select>
+                                <select id="Service" name="service" >
+                                        <option value="Invalid">Select type of room / Service*</option>
+                                        <option value="Room1">Room for 1 person</option>
+                                        <option value="Room2">Room for 2 persons</option>
+                                        <option value="Room3">Room for 4 persons</option>
+                                        <option value="FamilyRoom">Family room (6+)</option>
+                                        <option value="MissionarySuite">Missionary Suites</option>
+                                        <option value="Reception">Reception</option>
+                                        <option value="kindergarten">kindergarten</option>
+                                </select>
+                                <div id="ContainerDate">
+                                    <div class="TextContainer">
+                                        <p class="TextForm-small">Arrival date</p>
+                                        <p class="TextForm-small">Departure date</p>
+                                    </div>
+                                    <div class="inputContainer-date">
+                                        <input id="Arrival" type="date">
+                                        <input id="Departure" type="date">
+                                    </div>
+                                </div>
+                                <div class="ButtonContainer">
+                                    <p class="SmallTitle">*Obligatory Box</p>
+                                    <button class="back" type="button" onclick="BackStep1()">Back</button>
+                                    <button type="button" onclick="NextStep2()">Next</button>
+                                </div>
+                            </div>
+
+                            <!--Step 3-->
+                            <div id="Step3Container">
+                                <p class="TitleForm">Your comments</p>
+                                <p class="TextForm">Please let us know if you need anything else.</p>
+                                <div class="feedBack" id="checkStep3"></div>
+                                <textarea rows="5" cols="50" placeholder="Write your comments (Optional)"></textarea>
+                                <div class="ButtonContainer">
+                                    <p class="SmallTitle">*Obligatory Box</p>
+                                    <button class="back" type="button" onclick="BackStep2()">Back</button>
+                                    <input class="Button" type="submit" value="Submit" onclick="ThankyouPage()">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--Footer-->
+
+        <footer>
+            <div id="LogoFooter">
+                <img src="images/Logo-Footer.png" alt="Temple Inn & Suites Logo">
+            </div>
+            <div id="TextFooter">
+                <div class="ColFooter">
+                    <p class="Title-Footer"><a href="TemplePage.html">Temples</a></p>
+                    <p class="TextFooter">Madrid Spain</p>
+                    <p class="TextFooter">>Mexico City</p>
+                    <p class="TextFooter">Oakland CA</p>
+                    <p class="TextFooter">Sacramento CA</p>
+                </div>
+                <div class="ColFooter">
+                        <p class="Title-Footer">Reservation</p>
+                        <p class="TextFooter"><a href="ReservationPage.html">Make a date</a></p>
+                </div>
+                <div class="ColFooter">
+                        <p class="Title-Footer"><a href="ServicesPage.html">Services</a></p>
+                        <p class="TextFooter"><a href="ReceptionSubPage.html">Reception</a></p>
+                        <p class="TextFooter"><a href="MissionarySuites-SubPage.html">Missionary info</a></p>
+                </div>
+                <div class="ColFooter">
+                        <p class="Title-Footer">Contact</p>
+                        <p class="TextFooter"><a href="ContactPage.html">Send email</a></p>
+                </div>
+            </div>
+            <div id="NetworkingsFooter">
+                <p id="Text-Networkings">Follow us:</p>
+                <div id="Networking-Container">
+                    <a href="https://www.facebook.com/" target="_blank">
+                    <img class="networking" src="images/Facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                    <img class="networking" src="images/Instagram.png" alt="Instagram"></a>
+                    <a href="https://www.youtube.com/" target="_blank">
+                    <img class="networking" src="images/Youtube.png" alt="Youtube"></a>
+                </div>
+            </div>
+        </footer>
+
+        <!--Scripts-->
+        <script src="js/MultipleStepForm.js"></script>
+        <script src="js/FormSteps.js"></script>
+    </body>
+</html>

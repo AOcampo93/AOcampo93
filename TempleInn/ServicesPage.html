@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+            <title>Temple Inn & Suites - Services</title>
+            <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+            <meta name="description" content="The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world.">
+            <link rel="stylesheet" href="css/normalize.css">
+            <link rel="stylesheet" href="css/small.css">
+            <link rel="stylesheet" href="css/medium.css">
+            <link rel="stylesheet" href="css/large.css">
+            <link rel="stylesheet" href="css/extra-large.css">
+            <script src="js/MenuResponsive.js"></script>
+    </head>
+    <body>
+
+        <!--Header & Menu-->
+
+        <header>
+            <div id="Principal-Logo">
+                <img src="images/principal-logo.png" alt="Temple Inn & Suites Logo">
+            </div>
+            <nav>
+                <ul class="navigation">
+                    <li id="menu-icon"><a href="#" title="Menu" onclick="MenuResponsive()">&#9776; Menu</a></li>
+                    <div id="hidden">
+                    <hr class="horizontal">
+                    <li><a href="Home.html">Home</a></li>
+                    <div class="vertical"></div>
+                    <hr class="horizontal">
+                    <li><a href="TemplePage.html">Temples</a></li>
+                    <div class="vertical"></div>
+                    <hr class="horizontal">
+                    <li><a href="ReservationPage.html">Reservation</a></li>
+                    <div class="vertical"></div>
+                    <hr class="horizontal">
+                    <li><a href="ContactPage.html">Contact</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!--SlideShow-->
+                <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                            <div class="Slideshow-Container">
+                                <div class="TitleHome">WiFi high-speed internet access and smart TVs</div>
+                                <div class="SlideHome-text">Enjoy this free service in all our rooms and public rooms, like lobby, game room and much more.</div>
+                            </div>
+                            <picture>
+                                <source media="(min-width: 769px)" srcset="images/SlideShow-2(1920x667)-DesktopService2.png">
+                                <source media="(min-width: 426px)" srcset="images/SlideShow-2(768x400)-Service2.png">
+                                <img src="images/SlideShow-2(360x360)-Service2.png" alt="SlideShow(1)">
+                            </picture>
+                        </div>
+
+                        <div class="mySlides fade">
+                                <div class="Slideshow-Container">
+                                    <div class="TitleHome">Breakfast, Excercise / Workout room and Indoor Pool</div>
+                                    <div class="SlideHome-text">We have all for your visit, enjoy all this services for free.</div>
+                                </div>
+                                <picture>
+                                    <source media="(min-width: 769px)" srcset="images/SlideShow-1(1920x667)-DesktopService.png">
+                                    <source media="(min-width: 426px)" srcset="images/SlideShow-1(768x400)-TabletService.png">
+                                    <img src="images/SlideShow-1(360x360)-PhoneService.png" alt="SlideShow(2)">
+                                </picture>
+                            </div>
+
+                            <div class="mySlides fade">
+                                    <div class="Slideshow-Container">
+                                        <div class="TitleHome">Family History Consultation, Parking & Temple shuttle</div>
+                                        <div class="SlideHome-text">We have our Family history Consultation and more services for free, come in and enjoy it.</div>
+                                    </div>
+                                    <picture>
+                                        <source media="(min-width: 769px)" srcset="images/SlideShow-3(1920x667)-DesktopService3.png">
+                                        <source media="(min-width: 426px)" srcset="images/SlideShow-3(768x400)-TabletService3.png">
+                                        <img src="images/SlideShow-3(360x360)-PhoneService3.png" alt="SlideShow(3)">
+                                    </picture>
+                                </div>
+                        </div>
+                        <br>
+
+                        <div id="dots">
+                          <span class="dot" onclick="currentSlide(1)"></span>
+                          <span class="dot" onclick="currentSlide(2)"></span>
+                          <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+
+            <!--Specialized Services-->
+
+            <section id="ChooseTemple">
+                    <h1 class="tittleSection">Specialized Services</h1>
+                    <div id="BoxesContainer">
+    
+                        <div class="Service-box">
+                            <img src="images/ImgService(1)-Reception.png" alt="Madrid Spain Temple">
+                            <h4 id="title">Wedding Reception</h4>
+                            <p class="textBox serviceText">A wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food preparation and serving</p>
+                            <button class="ServiceButton" type="button" onclick="parent.location='ReceptionSubPage.html'">See more</button>
+                        </div>
+    
+                        <div class="Service-box">
+                            <img src="images/ImgService(2)-Missionary.png" alt="Mexico City Temple">
+                            <h4 id="title">Suites for full-time<br>temple missionaries</h4>
+                            <p class="textBox serviceText2">Long-term stay accommodations, suites with kitchen for full-time temple missionaries</p>
+                            <button class="ServiceButton" type="button" onclick="parent.location='MissionarySuites-SubPage.html'">See more</button>
+                        </div>
+                    </div>
+                </section>
+
+            <!--Orange Section-->
+            <div class="ContainerTitles">
+                <h3 class="tittleSection-Services">More Services</h2>
+            </div>
+            <section class="orange-section-service">
+                <div class="serviceContainer">
+                    <div class="Col-image SpaceOrange">
+                        <img src="images/Service(1).png" alt="About Us">
+                    </div>
+                    <div class="Col-center SpaceOrange">
+                        <h3 class="tittleServices">playroom & babysitting</h3>
+                        <p class="text-medium">Low-Cost, short-term babysitting services for the children of patrons.</p>
+                    </div>
+                </div>
+                <div class="serviceContainer-2">
+                    <div class="Col-image SpaceOrange">
+                        <img src="images/Service(2).png" alt="About Us">
+                    </div>
+                    <div class="Col-center SpaceOrange">
+                        <h3 class="tittleServices">Rooms & bathroom</h3>
+                        <p class="text-medium">Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and need to change to and from church clothes.</p>
+                    </div>
+                </div>
+                <div class="serviceContainer">
+                    <div class="Col-image SpaceOrange">
+                        <img src="images/Service(3).png" alt="About Us">
+                    </div>
+                    <div class="Col-center SpaceOrange">
+                        <h3 class="tittleServices">Family Search Center</h3>
+                        <p class="text-medium">A family search center that supports family search and ordinance work.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--Footer-->
+
+        <footer>
+            <div id="LogoFooter">
+                <img src="images/Logo-Footer.png" alt="Temple Inn & Suites Logo">
+            </div>
+            <div id="TextFooter">
+                <div class="ColFooter">
+                    <p class="Title-Footer"><a href="">Temples</a></p>
+                    <p class="TextFooter"><a href="">Madrid Spain</a></p>
+                    <p class="TextFooter"><a href="">Mexico City</a></p>
+                    <p class="TextFooter"><a href="">Oakland CA</a></p>
+                    <p class="TextFooter"><a href="">Sacramento CA</a></p>
+                </div>
+                <div class="ColFooter">
+                        <p class="Title-Footer">Reservation</p>
+                        <p class="TextFooter"><a href="">Make a date</a></p>
+                </div>
+                <div class="ColFooter">
+                        <p class="Title-Footer"><a href="">Services</a></p>
+                        <p class="TextFooter"><a href="">Reception</a></p>
+                        <p class="TextFooter"><a href="">Missionary info</a></p>
+                </div>
+                <div class="ColFooter">
+                        <p class="Title-Footer">Contact</p>
+                        <p class="TextFooter"><a href="">Send email</a></p>
+                </div>
+            </div>
+            <div id="NetworkingsFooter">
+                <p id="Text-Networkings">Follow us:</p>
+                <div id="Networking-Container">
+                    <a href="" target="_blank">
+                    <img class="networking" src="images/Facebook.png" alt="Facebook"></a>
+                    <a href="" target="_blank">
+                    <img class="networking" src="images/Instagram.png" alt="Instagram"></a>
+                    <a href="" target="_blank">
+                    <img class="networking" src="images/Youtube.png" alt="Youtube"></a>
+                </div>
+            </div>
+        </footer>
+
+        <!--Scripts-->
+        <script src="js/slideshow-Automatic.js"></script>
+        <script src="js/DataJSON.js"></script>
+        <script src="js/NextEndowment.js"></script>
+
+    </body>
+</html>

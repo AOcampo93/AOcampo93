@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <title>Temple Inn & Suites - Home</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="css/extra-large.css">
+    <script src="js/MenuResponsive.js"></script>
+</head>
+
+<body>
+
+    <!--Header & Menu-->
+
+    <header>
+        <div id="Principal-Logo">
+            <img src="images/principal-logo.png" alt="Temple Inn & Suites Logo">
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li id="menu-icon"><a href="#" title="Menu" onclick="MenuResponsive()">&#9776; Menu</a></li>
+                <div id="hidden">
+                    <hr class="horizontal">
+                    <li><a href="TemplePage.html">Temple</a></li>
+                    <div class="vertical"></div>
+                    <hr class="horizontal">
+                    <li><a href="ReservationPage.html">Reservation</a></li>
+                    <div class="vertical"></div>
+                    <hr class="horizontal">
+                    <li><a href="ServicesPage.html">Services</a></li>
+                    <div class="vertical"></div>
+                    <hr class="horizontal">
+                    <li><a href="ContactPage.html">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--SlideShow-->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="Slideshow-Container">
+                    <div class="TitleHome">We are near for each occasion</div>
+                    <div class="SlideHome-text">We are close to the temple to help you on your trip, and you could enjoy the experience completed. We have a reception room, kindergarten, dressing rooms and much more.</div>
+                    <button type="button" onclick="parent.location='ReservationPage.html'">Make Reservation</button>
+                </div>
+                <picture>
+                    <source media="(min-width: 769px)" srcset="images/SlideShow-1(1920x667)-Desktop.png">
+                    <source media="(min-width: 426px)" srcset="images/SlideShow-1(768x400)-Tablet.png">
+                    <img src="images/SlideShow-1(360x360)-Phone.png" alt="SlideShow(1)">
+                </picture>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="Slideshow-Container">
+                    <div class="TitleHome">A playroom and low-cost, short-term babysitting services for the children of patrons</div>
+                    <div class="SlideHome-text">Enjoy your time in the temple and leave your children with us.</div>
+                    <button type="button" onclick="parent.location='ServicesPage.html'">Our Services</button>
+                </div>
+                <picture>
+                    <source media="(min-width: 769px)" srcset="images/SlideShow-2(1920x667)-Desktop.png">
+                    <source media="(min-width: 426px)" srcset="images/SlideShow-2(768x400)-Tablet.png">
+                    <img src="images/SlideShow-2(360x360)-Phone.png" alt="SlideShow(2)">
+                </picture>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="Slideshow-Container">
+                    <div class="TitleHome">Wedding reception</div>
+                    <div class="SlideHome-text">A wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food preparation and serving.</div>
+                    <button type="button" onclick="parent.location='ReceptionSubPage.html'">Reception Service</button>
+                </div>
+                <picture>
+                    <source media="(min-width: 769px)" srcset="images/SlideShow-3(1920x667)-Desktop.png">
+                    <source media="(min-width: 426px)" srcset="images/SlideShow-3(768x400)-Tablet.png">
+                    <img src="images/SlideShow-3(360x360)-Phone.png" alt="SlideShow(3)">
+                </picture>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div id="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <!--Temple Section-->
+
+        <section id="TempleSection">
+            <div class="Col">
+                <h1>Mexico City Temple</h1>
+                <p class="centered">Know more about your temple, times, dates, sessions and much more.</p>
+                <div class="container-temple">
+                    <div class="row">
+                        <p class="Title-box SpacerHome">Address: </p>
+                        <p id="address"></p>
+                    </div>
+                    <div class="row">
+                        <p class="Title-box SpacerHome">Telephone: </p>
+                        <p id="telephone"></p>
+                    </div>
+                    <div class="row">
+                        <p class="Title-box SpacerHome">Services: </p>
+                        <p id="services"></p>
+                    </div>
+                </div>
+                <div class="container-temple">
+                    <p class="Title-box">Next Endowment Session: <span id="NextSesion"></span></p>
+                </div>
+                <button type="button" onclick="parent.location='TemplePage.html'">Choose your temple</button>
+            </div>
+            <div class="Col" id="ImgTemple-Home">
+                <picture>
+                    <source media="(min-width: 1025px)" srcset="images/ImgTemple-Home(Desktop-large).png">
+                    <source media="(min-width: 769px)" srcset="images/ImgTemple-Home(Desktop).png">
+                    <source media="(min-width: 426px)" srcset="images/ImgTemple-Home(Tablet).png">
+                    <img src="images/ImgTemple-Home(Phone).png" alt="Mexico Temple">
+                </picture>
+            </div>
+        </section>
+
+        <!--Orange Section-->
+
+        <section class="orange-section">
+            <div class="Col SpaceOrange">
+                <picture>
+                    <source media="(min-width: 1025px)" srcset="images/ImgOrangeSection-Home(Desktop).png">
+                    <source media="(min-width: 769px)" srcset="images/ImgOrangeSection-Home(Desktop).png">
+                    <source media="(min-width: 426px)" srcset="images/ImgOrangeSection-Home(Tablet).png">
+                    <img src="images/ImgOrangeSection-Home(Phone).png" alt="About Us">
+                </picture>
+            </div>
+            <div class="Col SpaceOrange">
+                <h2>About us?</h2>
+                <p class="text-medium">The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world.</p>
+                <button class="button-color" type="button" onclick="parent.location='ContactPage.html'">Contact Us</button>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+
+    <footer>
+        <div id="LogoFooter">
+            <img src="images/Logo-Footer.png" alt="Temple Inn & Suites Logo">
+        </div>
+        <div id="TextFooter">
+            <div class="ColFooter">
+                <p class="Title-Footer"><a href="TemplePage.html">Temples</a></p>
+                <p class="TextFooter">Madrid Spain</p>
+                <p class="TextFooter">Mexico City</p>
+                <p class="TextFooter">Oakland CA</p>
+                <p class="TextFooter">Sacramento CA</p>
+            </div>
+            <div class="ColFooter">
+                <p class="Title-Footer">Reservation</p>
+                <p class="TextFooter"><a href="ReservationPage.html">Make a date</a></p>
+            </div>
+            <div class="ColFooter">
+                <p class="Title-Footer"><a href="ServicesPage.html">Services</a></p>
+                <p class="TextFooter"><a href="ReceptionSubPage.html">Reception</a></p>
+                <p class="TextFooter"><a href="MissionarySuites-SubPage.html">Missionary info</a></p>
+            </div>
+            <div class="ColFooter">
+                <p class="Title-Footer">Contact</p>
+                <p class="TextFooter"><a href="ContactPage.html">Send email</a></p>
+            </div>
+        </div>
+        <div id="NetworkingsFooter">
+            <p id="Text-Networkings">Follow us:</p>
+            <div id="Networking-Container">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img class="networking" src="images/Facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img class="networking" src="images/Instagram.png" alt="Instagram"></a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img class="networking" src="images/Youtube.png" alt="Youtube"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Scripts-->
+    <script src="js/slideshow.js"></script>
+    <!--<script src="js/DataJSON.js"></script>
+    <script src="js/NextEndowment.js"></script>-->
+    <script src="js/TempleScript.js"></script>
+
+</body>
+
+</html>
