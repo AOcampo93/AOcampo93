@@ -1,5 +1,5 @@
 //JSON DATA
-var MadridSpain ={"Address":"Calle Del Templo No 2 Madrid 28030 Madrid, Spain", "Telephone":"(34) 91-214-2607", "Services":"Clothing rental available<br>Cafeteria available<br>Patron housing available<br>Distribution center nearby<br>", "Ordinances":{"Baptism":"8:00 AM - 7:00 PM Walk-ins and Appointments", "Initiatory":"8:00 AM - 7:00 PM Walk-ins Only", "Endowment":"8:00 AM Walk-ins and Appointments<br>9:00 AM Walk-ins and Appointments<br>10:00 AM Walk-ins and Appointments<br>11:00 AM Walk-ins and Appointments", "Sealing":"8:00 AM - 7:00 PM Walk-ins Only"}};
+var MadridSpain = { "Address": "Calle Del Templo No 2 Madrid 28030 Madrid, Spain", "Telephone": "(34) 91-214-2607", "Services": "Clothing rental available<br>Cafeteria available<br>Patron housing available<br>Distribution center nearby<br>", "Ordinances": { "Baptism": "8:00 AM - 7:00 PM Walk-ins and Appointments", "Initiatory": "8:00 AM - 7:00 PM Walk-ins Only", "Endowment": "8:00 AM Walk-ins and Appointments<br>9:00 AM Walk-ins and Appointments<br>10:00 AM Walk-ins and Appointments<br>11:00 AM Walk-ins and Appointments", "Sealing": "8:00 AM - 7:00 PM Walk-ins Only" } };
 // GENERAL INFO 
 document.getElementById('addressSchedule-Madrid').innerHTML = MadridSpain.Address;
 document.getElementById('telephoneSchedule-Madrid').innerHTML = MadridSpain.Telephone;
@@ -13,7 +13,7 @@ function SearchMadrid() {
 
     var x = document.getElementById("Date-Madrid");
     let date = new Date(x.value);
-    
+
     var fechaNum = date.getDate() + 1;
     var mes_name = date.getMonth();
 
@@ -21,7 +21,7 @@ function SearchMadrid() {
     var y = document.getElementById('OrdinanceType-Madrid').value;
     var output;
     //Give correct info depending of the day
-    if (WeekDay == 2 || WeekDay == 3 || WeekDay == 4 || WeekDay == 5 || WeekDay == 6 ) {
+    if (WeekDay == 2 || WeekDay == 3 || WeekDay == 4 || WeekDay == 5 || WeekDay == 6) {
 
         switch (y) {
             case "Baptism":
@@ -39,12 +39,10 @@ function SearchMadrid() {
             default:
                 output = "Please Select one ordinance for do the search";
         }
-    }
-    else {
+    } else {
         output = "The temple is closed Today";
     }
 
     document.getElementById('ScheduleMadrid').innerHTML = output;
     document.getElementById('OrdinaceMadrid').innerHTML = y;
 }
-
