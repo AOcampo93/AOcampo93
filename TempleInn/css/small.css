@@ -303,6 +303,7 @@
         text-align: center;
         margin-top: 15%;
         margin-bottom: 15%;
+        color: white;
     }
     #BoxesContainer {
         width: 100%;
@@ -415,6 +416,7 @@
         margin-left: 15px;
         font-size: 16pt;
         font-weight: 800;
+        color: white;
     }
     /*-----------Reservation Page----------*/
     #ContainerReservation {
